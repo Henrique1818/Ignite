@@ -1,4 +1,3 @@
-const { request, response } = require('express');
 const express = require('express');
 
 const app = express();
@@ -31,4 +30,4 @@ app.delete('/courses/:id', (request, response) => {
     return response.json(['Curso 6', 'Curso 2', 'Curso 4']);
 });
 
-app.listen(3333)
+app.listen(3333);
