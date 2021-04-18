@@ -8,5 +8,10 @@ export function createCourse(request: Request, response: Response ) {
         duration: 12
     });
 
+    CreateCouserSvc.execute({
+        name: 'Trilha ReactJS',
+        educator: 'Ana',
+    });
+
     return response.send();
 }
